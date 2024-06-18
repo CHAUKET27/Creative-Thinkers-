@@ -1,0 +1,225 @@
+</body><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .product-info {
+            flex: 1;
+            padding-right: 10px;
+        }
+        .product-actions {
+            display: flex;
+            align-items: center;
+        }
+        .btn-add-to-cart, .btn-remove-from-cart {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-left: 5px;
+        }
+        .btn-add-to-cart:hover {
+            background-color: #45a049;
+        }
+        .btn-remove-from-cart:hover {
+            background-color: #f44336;
+        }
+        .cart-badge {
+            background-color: #f44336;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 50%;
+            font-size: 14px;
+            margin-left: 5px;
+        }
+        body {
+background-image: url(pg.jpg);
+}
+
+    </style>
+</head>
+<body>
+    <h2>Product Catalog</h2>
+
+    <div id="catalog">
+        <div class="product" id="This large picture was seurat's">
+            <div class="product-info">
+                <h3>This large picture was seurat's</h3>
+               <img src="https://2.bp.blogspot.com/-2GPeysNpfBk/WIpZ6BoxgYI/AAAAAAAAD80/LYjiHl4WHkU4jK0mPwwsg41cpxWiPuo6ACLcB/s1600/times%2Bsquare.jpg" alt="Debra Hurd Original Paintings AND Jazz Art: Cityscape New York City ..." class=" nofocus" tabindex="0" aria-label="Debra Hurd Original Paintings AND Jazz Art: Cityscape New York City ..." role="button" width="400" height="400">
+
+                <p>Price: $5550.00</p>
+            </div>
+            <div class="product-actions">
+                <button class="btn-add-to-cart" onclick="addToCart('This large picture was Seurat\'s', 5550.00)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product" id="Art Prints">
+            <div class="product-info">
+                <h3>Art Prints</h3>
+                <img src="https://www.thewowstyle.com/wp-content/uploads/2015/01/picture-abstract-art.jpg" alt="25 Most Famous Paintings Of All Time : This large picture was seurat's ..." class=" nofocus" tabindex="0" aria-label="25 Most Famous Paintings Of All Time : This large picture was seurat's ..." role="button" width="300" height="300">
+                <p>Price: $1500.00</p>
+            </div>
+            <div class="product-actions">
+               <button class="btn-add-to-cart" onclick="addToCart('Art Prints', 1500.00)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product" id="The Death of Nature">
+            <div class="product-info">
+                <h3>The Death of Nature</h3>
+               <img src="https://i.etsystatic.com/5711041/r/il/0ec58a/1939684033/il_fullxfull.1939684033_t83u.jpg" alt="Birmingham Art Gallery, Painting, Painting Art, Paintings, Painted ..." class=" nofocus" tabindex="0" aria-label="Birmingham Art Gallery, Painting, Painting Art, Paintings, Painted ..." role="button" width="300" height="300">
+                <p>Price: $2500.00</p>
+            </div>
+            <div class="product-actions">
+               <button class="btn-add-to-cart" onclick="addToCart('The Death of Nature', 2500.00)">Add to Cart</button>
+
+            </div>
+        </div>
+
+        <div class="product" id="Ayele Assefa a Satanic International Network Forum">
+            <div class="product-info">
+                <h3>Ayele Assefa a Satanic International Network Forum</h3>
+                <img src="https://1.bp.blogspot.com/-NHAambDKyrM/YASpoG600FI/AAAAAAAAkKw/uYTgxO31lQ0pq_scgkvnWhoIbOYce1ORgCLcBGAsYHQ/s2048/modest-famous-modern-paintings-gallery-on-home-design-with-contemporary-ethiopian-and-african-paintings-and-art-at-st-george.jpg" alt="Ayele Assefa at Satanic International Network Forum" class=" nofocus" tabindex="0" aria-label="Ayele Assefa at Satanic International Network Forum" role="button" width="300" height="300">
+                <p>Price: $5500.00</p>
+            </div>
+            <div class="product-actions">
+               <button class="btn-add-to-cart" onclick="addToCart('Ayele Assefa a Satanic International Network Forum', 5500.00)">Add to Cart</button>
+
+            </div>
+        </div>
+
+        <div class="product" id="The watcher">
+            <div class="product-info">
+                <h3>The watcher</h3>
+               <img src="https://dkemhji6i1k0x.cloudfront.net/000_clients/1422548/page/14225484wulJvpF.jpg" alt="Paintings" class=" nofocus" tabindex="0" aria-label="Paintings" role="button" width="300" height="300">
+<p>Price: $13000.00</p>
+            </div>
+            <div class="product-actions">
+              <button class="btn-add-to-cart" onclick="addToCart('The watcher', 13000.00)">Add to Cart</button>
+
+            </div>
+        </div>
+
+        <div class="product" id="Munch-The-Scream">
+            <div class="product-info">
+                <h3>Munch-The-Scream</h3>   
+              <img src="https://www.topteny.com/wp-content/uploads/2014/10/8850-Munch-The-Scream-e1337760650177.jpg?x94514" alt="Top 10 Most Famous Paintings Of The World | TopTeny.com" class=" nofocus" tabindex="0" aria-label="Top 10 Most Famous Paintings Of The World | TopTeny.com" role="button"width="300" height="300">
+                <p>Price: $35000.00</p>
+            </div>
+            <div class="product-actions">
+                <button class="btn-add-to-cart" onclick="addToCart('Munch-The-Scream', 35000.00)">Add to Cart</button>
+
+            </div>
+        </div>
+
+        <div class="product" id="oil painting by A.Y. Jackson">
+            <div class="product-info">
+                <h3>oil painting by A.Y. Jackson</h3>
+                 <img src="https://th.bing.com/th/id/R.06598e6c81eb3b1d393a83ae7990b17c?rik=CUwAEWrf2nBTzg&amp;pid=ImgRaw&amp;r=0" alt="KDS Photo - Art Gallery of Ontario, oil painting by A.Y. Jackson ..." class=" nofocus" tabindex="0" aria-label="KDS Photo - Art Gallery of Ontario, oil painting by A.Y. Jackson ..." role="button" width="300" height="300">
+                <p>Price: $41000.00</p>
+            </div>
+            <div class="product-actions">
+               <button class="btn-add-to-cart" onclick="addToCart('oil painting by A.Y. Jackson', 41000.00)">Add to Cart</button>
+
+            </div>
+        </div>
+    </div>
+
+    <h2>Shopping Cart</h2>
+
+    <div id="cart">
+        <p>Items in cart: <span id="cart-count">0</span></p>
+        <ul id="cart-items">
+            <!-- Cart items will be dynamically inserted here -->
+        </ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button onclick="document.location='Checkout.html'">Checkout</button>
+    </div>
+
+    <script>
+        let cart = [];  // Array to store items in the cart
+
+        function addToCart(productName, price) {
+            // Check if the product is already in the cart
+            let found = false;
+            for (let i = 0; i < cart.length; i++) {
+                if (cart[i].name === productName) {
+                    cart[i].quantity++;
+                    found = true;
+                    break;
+                }
+            }
+
+            // If not found, add the product to the cart
+            if (!found) {
+                cart.push({ name: productName, price: price, quantity: 1 });
+            }
+
+            // Update cart display
+            updateCartDisplay();
+        }
+
+        function removeCartItem(index) {
+            cart.splice(index, 1);
+            updateCartDisplay();
+        }
+
+        function updateCartDisplay() {
+            const cartCountElement = document.getElementById('cart-count');
+            const cartItemsElement = document.getElementById('cart-items');
+            const cartTotalElement = document.getElementById('cart-total');
+
+            // Clear current cart display
+            cartItemsElement.innerHTML = '';
+
+            let total = 0;
+            cart.forEach((item, index) => {
+                const itemTotal = item.price * item.quantity;
+                total += itemTotal;
+
+                const li = document.createElement('li');
+                li.textContent = `${item.name} - Quantity: ${item.quantity} - $${itemTotal.toFixed(2)}`;
+                
+                // Create remove button for each item in cart
+                const removeBtn = document.createElement('button');
+                removeBtn.textContent = 'Remove';
+                removeBtn.classList.add('btn-remove-from-cart');
+                removeBtn.onclick = () => removeCartItem(index);
+                li.appendChild(removeBtn);
+
+                cartItemsElement.appendChild(li);
+            });
+
+            // Update total cost and cart count
+            cartCountElement.textContent = cart.reduce((acc, item) => acc + item.quantity, 0);
+            cartTotalElement.textContent = total.toFixed(2);
+        }
+
+        function checkout() {
+            // Placeholder function for checkout logic
+            alert('Redirecting to checkout page...');
+        }
+    </script>
+
+</html>
